@@ -1,0 +1,59 @@
+.container-main {
+	width: 900px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+h2 {
+	color: #d23d3d;
+}
+
+h3 {
+	color: #666;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.logo {
+	font-size: 70px;
+	text-align: center;
+	color: #c9c9c9;
+}
+
+.c-red {
+	color: #d23d3d;
+}
+
+.logo .red_word {
+	color: #d23d3d;
+}
+
+.p-center {
+	text-align: center;
+}
+
+code, pre {
+	font-family: Consolas, Monaco, "Andale Mono", "Courier New", monospace;
+	font-size: 14px;
+	white-space: pre-wrap;
+	overflow:auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+code {
+    padding: 0 3px;
+    line-height: 23px;
+}
+
+pre {
+	display: block;
+	padding: 10px 15px;
+	margin: 0 0 22px;
+	background-color: #FEFBF3;
+	border: 1px solid #ddd !important;
+    white-space: pre;
+    overflow:auto;
+    overflow-y: hidden; *padding-bottom: 20px; /* Remove vertical scrollbar on Ie6, IE7 */
+}
