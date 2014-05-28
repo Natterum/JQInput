@@ -1,6 +1,6 @@
 /*!
  * JQInput - jQuery Plugin
- * version: 0.1
+ * version: 0.2.3
  * @requires jQuery v1.6 or later
  *
  * Source at https://github.com/Natterum/JQInput
@@ -22,7 +22,7 @@
 		    
 		    methods.Exec(settings, this);
 	      	
-	      	$(this).bind('click change keyup', function() {
+	      	$(this).bind('click change keydown keyup', function() {
 	      		methods.Exec(settings, this);
 	      	});
 	      	
@@ -59,13 +59,17 @@
 	        $start 	= $this[0].selectionStart;
 	        $end 	= $this[0].selectionEnd;
 	        
-	        if ($val > $max) {
-	            $val = $max; 
-	            $this.val ($max);
+	        if ($max != null) {
+		        if ($val > $max) {
+		            $val = $max; 
+		            $this.val ($max);
+		        }
 	        }
-	        if ($val < $min) {
-	            $val = $min;
-	            $this.val ($min);
+	        if ($min != null) {
+		        if ($val < $min) {
+		            $val = $min;
+		            $this.val ($min);
+		        }
 	        }
 	        
 	        if (settings.spaces) {
