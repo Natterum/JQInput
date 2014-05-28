@@ -1,6 +1,6 @@
 /*!
  * JQInput - jQuery Plugin
- * version: 0.2.4
+ * version: 0.2.5
  * @requires jQuery v1.6 or later
  *
  * Source at https://github.com/Natterum/JQInput
@@ -17,7 +17,7 @@
 			var settings = $.extend({
 		      min        	: null,
 		      max 			: null,
-		      spaces		: false,
+		      digit		: false,
 		    }, options);
 		    
 		    methods.Exec(settings, this);
@@ -72,7 +72,7 @@
 		        }
 	        }
 	        
-	        if (settings.spaces) {
+	        if (settings.digit) {
 	        	var $text 	= methods.addSpaces($val);
 	        	
 		        var $offset = $text.length - $cur_text.length;

@@ -22,7 +22,7 @@
 <div class="container-main">
 	<h1 class="logo">JQ<span class="red_word">I</span>nput</h1>
 	<br/>
-	<p class="p-center"><a href="https://github.com/Natterum/JQInput/archive/master.zip" class="btn btn-danger">Скачать <b>v0.2.4</b> на GitHub</a></p>
+	<p class="p-center"><a href="https://github.com/Natterum/JQInput/archive/master.zip" class="btn btn-danger">Скачать <b>v0.2.5</b> на GitHub</a></p>
 	<br/>
 	<p><b>JQInput</b> является инструментом, который предлагает хороший и легкий способ управлением числами в <b>inputbox</b>. 
 		Плагин построен на JasaScript с использованием фреймворка <a href="http://jquery.com">JQuery</a>.
@@ -32,7 +32,7 @@
 	<h2>Основные возможности:</h2>
 	<ul>
 		<li>Установка минимального и максимального диапазона для числа.</li>
-		<li>Разделение числа на разряды.</li>
+		<li>Разделение числа на группы разрядов.</li>
 	</ul>
 	<br/>
 	
@@ -64,14 +64,14 @@
 
 
 
-	<h3>С помощью опции "spaces" можно разделить число на разряды. При этой опции курсор реагирует адекватно:</h3>
+	<h3>С помощью опции "digit" можно разделить число на группу разрядов:</h3>
 <pre class="prettyprint">
 &lt;script type=&quot;text/javascript&quot;&gt;
 	$(document).ready(function() {
 	    	$('#input_2').JQInput({
 	    		'min' 	: 0,
 	    		'max' 	: 10000000000,
-	    		'spaces': true,
+	    		'digit': true,
 	    	});
 	});
 &lt;/script&gt;
@@ -81,7 +81,7 @@
     	$('#input_2').JQInput({
     		'min' 	: 0,
     		'max' 	: 10000000000,
-    		'spaces': true,
+    		'digit': true,
     	});
 	});
 </script>
