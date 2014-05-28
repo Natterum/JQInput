@@ -1,6 +1,6 @@
 /*!
  * JQInput - jQuery Plugin
- * version: 0.2.3
+ * version: 0.2.4
  * @requires jQuery v1.6 or later
  *
  * Source at https://github.com/Natterum/JQInput
